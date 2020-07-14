@@ -1,9 +1,10 @@
 name: Docker
 
-trigger:
-- iroha2-dev
-pr: none
-
+on:
+  pull_request:
+  push:
+    branches:
+      - iroha2-dev
 
 jobs:
   test-docker:
